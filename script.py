@@ -4,10 +4,10 @@ print("Hi, this programm will convert kilometers into miles.")
 #The program asks user to enter number of kilometers.
 km = input("Enter the number of kilometers you want to convert ")
 km = float(km.replace(",", ".")) #replace comma with dot, if user entered a comma
-mi = float(km)*round(0.621371, 2)
+mi = float(km)*0.621371
 #User enters the amount of kilometers.
 #The program converts these kilometers into miles and prints them.
-print(str(km) + " kilometers are ~ " + str(mi) + " miles".format(km, mi))
+print(str(km) + " kilometers are ~ " + str(mi) + " miles")
 #The program asks user if s/he'd want to do another conversion.
 while choice != "n":
     choice = input("Do another conversion? (y/n) ")
